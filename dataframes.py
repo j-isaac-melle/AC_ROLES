@@ -92,7 +92,7 @@ st.line_chart(chart_data)
 st.header('st.selectbox')
 
 option = st.selectbox(
-     'What is your favorite color?',
-     ('Blue', 'Red', 'Green'))
+     'Pick a role',
+     ('AccountAdmin', 'Sysadmin', 'usr_jonathan_melle'))
 
-st.write('Your favorite color is ', option)
+st.write('Roles ', option)

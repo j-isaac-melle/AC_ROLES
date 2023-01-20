@@ -16,8 +16,8 @@ st.write(1234)
 # Example 3
 
 df = pd.DataFrame({
-     'first column': ['jon', 2, 3, 4],
-     'second column': [10, 20, 30, 40]
+     'Roles': ['usr_jonathan_melle', 'accountadmin'],
+     'User': ['jonathan.melle@aircanada.ca']
      })
 st.write(df)
 

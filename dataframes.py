@@ -1,3 +1,4 @@
+pip install streamlit_pandas_profiling
 import numpy as np
 import altair as alt
 import pandas as pd

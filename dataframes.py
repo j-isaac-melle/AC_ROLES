@@ -3,6 +3,9 @@ import altair as alt
 import pandas as pd
 import streamlit as st
 
+st.title('st.secrets')
+
+st.write(st.secrets['message'])
 
 number = st.sidebar.slider('Select a number:', 0, 10, 5)
 st.write('Selected number from slider widget is:', number)

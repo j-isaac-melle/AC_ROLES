@@ -97,9 +97,9 @@ option = st.selectbox(
 
 st.write('Role: ', option)
 
-import streamlit as st
 
-st.header('st.multiselect')
+
+st.header('multiselect users')
 
 options = st.multiselect(
      'Find a User:',

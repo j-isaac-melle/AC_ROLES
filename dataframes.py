@@ -96,3 +96,14 @@ option = st.selectbox(
      ('AccountAdmin', 'Sysadmin', 'usr_jonathan_melle'))
 
 st.write('Role: ', option)
+
+import streamlit as st
+
+st.header('st.multiselect')
+
+options = st.multiselect(
+     'Find a User:',
+     ['jonathan.melle@aircanada.ca', 'roger.matadeen@aircanada.ca', 'john.smith@aircanada.ca', 'emily.brown@aircanada.ca'],
+     ['Yellow', 'Red'])
+
+st.write('You selected:', options)

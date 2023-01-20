@@ -4,7 +4,7 @@ import pandas as pd
 import streamlit as st
 
 
-st.line_chart(chart_data)
+
 
 st.header('Air Canada Roles & Users')
 

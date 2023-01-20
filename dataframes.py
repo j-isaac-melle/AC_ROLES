@@ -3,7 +3,7 @@ import altair as alt
 import pandas as pd
 import streamlit as st
 
-st.header('st.write')
+st.header('Air Canada Roles & Users')
 
 # Example 1
 
@@ -16,7 +16,7 @@ st.write(1234)
 # Example 3
 
 df = pd.DataFrame({
-     'first column': [1, 2, 3, 4],
+     'first column': ['jon', 2, 3, 4],
      'second column': [10, 20, 30, 40]
      })
 st.write(df)

@@ -3,7 +3,7 @@ import altair as alt
 import pandas as pd
 import streamlit as st
 
-\st.title('Customizing the theme of Streamlit apps')
+st.title('Customizing the theme of Streamlit apps')
 
 st.write('Contents of the `.streamlit/config.toml` file of this app')
 

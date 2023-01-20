@@ -89,7 +89,7 @@ st.line_chart(chart_data)
 
 #Favorite color selector:
 
-st.header('st.selectbox')
+st.header('Role Picker')
 
 option = st.selectbox(
      'Pick a role',

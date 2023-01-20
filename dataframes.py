@@ -18,15 +18,15 @@ streamlit.header('Check out our users:')
 #streamlit.dataframe()
 
 
-my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake2"])
+#my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake2"])
 
-my_cur = my_cnx.cursor()
+#my_cur = my_cnx.cursor()
 
-my_cur.execute("SELECT * FROM PC_RIVERY_DB.PUBLIC.USERS")
-myresult = my_cur.fetchall()
+#my_cur.execute("SELECT * FROM PC_RIVERY_DB.PUBLIC.USERS")
+#myresult = my_cur.fetchall()
 
 
-streamlit.dataframe(myresult)
+#streamlit.dataframe(myresult)
 
 
 #streamlit.header('Check out our Roles:')

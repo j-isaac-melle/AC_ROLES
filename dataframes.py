@@ -9,6 +9,23 @@ import streamlit as st
 st.header('Air Canada Roles & Users')
 
 # Example 1
+st.header('Role Picker')
+
+option = st.selectbox(
+     'Pick a role',
+     ('AccountAdmin', 'Sysadmin', 'usr_jonathan_melle'))
+
+st.write('Role: ', option)
+
+
+
+st.header('multiselect users')
+
+options = st.multiselect(
+     'Find a User:',
+     ['jonathan.melle@aircanada.ca', 'roger.matadeen@aircanada.ca', 'john.smith@aircanada.ca', 'emily.brown@aircanada.ca'])
+
+st.write('You selected:', options)
 
 st.write('Data Table 1:')
 
@@ -89,20 +106,4 @@ st.line_chart(chart_data)
 
 #Favorite color selector:
 
-st.header('Role Picker')
 
-option = st.selectbox(
-     'Pick a role',
-     ('AccountAdmin', 'Sysadmin', 'usr_jonathan_melle'))
-
-st.write('Role: ', option)
-
-
-
-st.header('multiselect users')
-
-options = st.multiselect(
-     'Find a User:',
-     ['jonathan.melle@aircanada.ca', 'roger.matadeen@aircanada.ca', 'john.smith@aircanada.ca', 'emily.brown@aircanada.ca'])
-
-st.write('You selected:', options)

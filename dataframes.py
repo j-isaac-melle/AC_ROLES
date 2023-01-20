@@ -55,9 +55,7 @@ if users:
 
 if roles: 
      st.write("Here are our roles:")
-# Example 4
 
-st.write('Below is a DataFrame:', df, 'Above is a dataframe.')
 
 # Example 5
 

@@ -95,4 +95,4 @@ option = st.selectbox(
      'Pick a role',
      ('AccountAdmin', 'Sysadmin', 'usr_jonathan_melle'))
 
-st.write('Roles ', option)
+st.write('Role: ', option)

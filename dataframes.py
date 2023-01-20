@@ -11,7 +11,7 @@ st.write('Selected number from slider widget is:', number)
 st.header('Role Heirarchy Explorer:')
 
 # Select box 1
-st.header('Users assigned to Roles:')
+st.subheader('Users assigned to Roles:')
 
 option = st.selectbox(
      '',
@@ -21,7 +21,7 @@ st.write('Role: ', option)
 
 
 #multiselect example:
-st.header('Roles assigned to users')
+st.subheader('Roles assigned to users')
 
 options = st.multiselect(
      'Find a User:',

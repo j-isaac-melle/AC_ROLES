@@ -8,7 +8,7 @@ import streamlit as st
 
 st.header('Air Canada Roles & Users')
 
-# Example 1
+# Select box 1
 st.header('Role Picker')
 
 option = st.selectbox(
@@ -18,7 +18,7 @@ option = st.selectbox(
 st.write('Role: ', option)
 
 
-
+#multiselect example:
 st.header('multiselect users')
 
 options = st.multiselect(
@@ -29,7 +29,7 @@ st.write('You selected:', options)
 
 st.write('Data Table 1:')
 
-# Example 2
+# Datatable
 
 st.write('1 user: 2 roles')
 
@@ -41,6 +41,20 @@ df = pd.DataFrame({
      })
 st.write(df)
 
+#Checkbox
+
+st.header('user/role checkbox')
+
+st.write ('Users with/out roles?)
+
+users = st.checkbox('Users')
+roles = st.checkbox('Roles')
+
+if users:
+     st.write("Here are our users:")
+
+if roles: 
+     st.write("Here are our roles:")
 # Example 4
 
 st.write('Below is a DataFrame:', df, 'Above is a dataframe.')
@@ -107,19 +121,4 @@ st.line_chart(chart_data)
 #Favorite color selector:
 
 
-st.header('st.checkbox')
 
-st.write ('What would you like to order?')
-
-icecream = st.checkbox('Ice cream')
-coffee = st.checkbox('Coffee')
-cola = st.checkbox('Cola')
-
-if icecream:
-     st.write("Great! Here's some more 🍦")
-
-if coffee: 
-     st.write("Okay, here's some coffee ☕")
-
-if cola:
-     st.write("Here you go 🥤")

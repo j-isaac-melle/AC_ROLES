@@ -43,7 +43,7 @@ st.write(df)
 
 #Checkbox
 #FILE UPLOADER
-st.title('st.file_uploader')
+st.title('Upload file')
 
 st.subheader('Input CSV')
 uploaded_file = st.file_uploader("Choose a file")

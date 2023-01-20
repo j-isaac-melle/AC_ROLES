@@ -8,20 +8,20 @@ import streamlit as st
 number = st.sidebar.slider('Select a number:', 0, 10, 5)
 st.write('Selected number from slider widget is:', number)
 
-st.header('Air Canada Roles & Users')
+st.header('Role Heirarchy Explorer:')
 
 # Select box 1
 st.header('Role Picker')
 
 option = st.selectbox(
-     'Pick a role',
-     ('AccountAdmin', 'Sysadmin', 'usr_jonathan_melle'))
+     'Users assigned to Roles:',
+     ('AccountAdmin', 'Sysadmin'))
 
 st.write('Role: ', option)
 
 
 #multiselect example:
-st.header('multiselect users')
+st.header('Roles assigned to users')
 
 options = st.multiselect(
      'Find a User:',

@@ -138,6 +138,8 @@ st.line_chart(chart_data)
 
 # STREAMLIT LAYOUT: APP
 
+import streamlit as st
+
 st.set_page_config(layout="wide")
 
 st.title('How to layout your Streamlit app')

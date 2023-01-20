@@ -60,7 +60,7 @@ values = st.slider(
 st.write('Values:', values)
 
 # Example 3
-
+#Range of time
 st.subheader('Range time slider')
 
 appointment = st.slider(
@@ -69,7 +69,7 @@ appointment = st.slider(
 st.write("You're scheduled for:", appointment)
 
 # Example 4
-
+#Date slider
 st.subheader('Datetime slider')
 
 start_time = st.slider(
@@ -78,10 +78,21 @@ start_time = st.slider(
      format="MM/DD/YY - hh:mm")
 st.write("Start time:", start_time)
 
-st.header('Line chart')
+#random numbers line chart
+st.header('Random number --> a,b,c')
 
 chart_data = pd.DataFrame(
      np.random.randn(20, 3),
      columns=['a', 'b', 'c'])
 
 st.line_chart(chart_data)
+
+#Favorite color selector:
+
+st.header('st.selectbox')
+
+option = st.selectbox(
+     'What is your favorite color?',
+     ('Blue', 'Red', 'Green'))
+
+st.write('Your favorite color is ', option)

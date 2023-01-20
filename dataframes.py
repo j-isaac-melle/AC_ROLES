@@ -11,10 +11,10 @@ st.write('Selected number from slider widget is:', number)
 st.header('Role Heirarchy Explorer:')
 
 # Select box 1
-st.header('Role Picker')
+st.header('Users assigned to Roles:')
 
 option = st.selectbox(
-     'Users assigned to Roles:',
+     '',
      ('AccountAdmin', 'Sysadmin'))
 
 st.write('Role: ', option)

@@ -103,7 +103,6 @@ st.header('multiselect users')
 
 options = st.multiselect(
      'Find a User:',
-     ['jonathan.melle@aircanada.ca', 'roger.matadeen@aircanada.ca', 'john.smith@aircanada.ca', 'emily.brown@aircanada.ca'],
-     ['Yellow', 'Red'])
+     ['jonathan.melle@aircanada.ca', 'roger.matadeen@aircanada.ca', 'john.smith@aircanada.ca', 'emily.brown@aircanada.ca'])
 
 st.write('You selected:', options)

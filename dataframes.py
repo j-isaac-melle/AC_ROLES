@@ -45,7 +45,7 @@ st.write(df)
 
 st.header('user/role checkbox')
 
-st.write ('Users with/out roles?)
+st.write ('Users with/out roles')
 
 users = st.checkbox('Users')
 roles = st.checkbox('Roles')

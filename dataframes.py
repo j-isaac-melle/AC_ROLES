@@ -17,7 +17,7 @@ st.write(1234)
 
 df = pd.DataFrame({
      'Roles': ['usr_jonathan_melle', 'accountadmin'],
-     'User': ['jonathan.melle@aircanada.ca']
+     'User': ['jonathan.melle@aircanada.ca',3]
      })
 st.write(df)
 

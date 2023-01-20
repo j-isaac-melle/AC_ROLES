@@ -11,8 +11,6 @@ st.latex(r'''
      a \left(\frac{1-r^{n}}{1-r}\right)
      ''')
 
-pr = df.profile_report()
-st_profile_report(pr)
 
 st.header('Air Canada Roles & Users')
 

@@ -1,9 +1,11 @@
 import numpy as np
 import altair as alt
+import snowflake.connector
 import pandas as pd
 import streamlit as st
 
-import snowflake.connector
+
+
 
 # Connect to the Snowflake database
 cnx = snowflake.connector.connect(

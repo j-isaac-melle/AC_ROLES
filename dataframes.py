@@ -4,7 +4,7 @@ import pandas as pd
 import streamlit as st
 
 import snowflake.connector
-!pip install snowflake-connector-python
+
 # Connect to the Snowflake database
 cnx = snowflake.connector.connect(
     user='jisaacmelle001',

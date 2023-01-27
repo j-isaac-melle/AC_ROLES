@@ -5,9 +5,6 @@ import snowflake.connector
 import pandas as pd
 
 
-
-
-
 # Connect to the Snowflake database
 cnx = snowflake.connector.connect(**st.secrets["snowflake3"])
 cursor = cnx.cursor()

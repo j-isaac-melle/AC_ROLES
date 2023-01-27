@@ -10,26 +10,26 @@ cnx = snowflake.connector.connect(**st.secrets["snowflake3"])
 cursor = cnx.cursor()
 
 # Define the SQL query to retrieve the roles and their privileges
-query = """
-SELECT
-    ROLE_NAME,
-    PRIVILEGE_NAME
-FROM
-    INFORMATION_SCHEMA.ROLE_PRIVILEGES
-"""
+#query = """
+#SELECT
+ #   ROLE_NAME,
+#    PRIVILEGE_NAME
+#FROM
+ #   INFORMATION_SCHEMA.ROLE_PRIVILEGES
+#"""
 
 # Execute the query and fetch the results
-cursor.execute(query)
-rows = cursor.fetchall()
+#cursor.execute(query)
+#rows = cursor.fetchall()
 
 st.title("Snowflake Role Governance")
 
 # Create a table to display the results
-st.table(rows)
+#st.table(rows)
 
 # Close the cursor and connection
-cursor.close()
-cnx.close()
+#cursor.close()
+#cnx.close()
 
 
 

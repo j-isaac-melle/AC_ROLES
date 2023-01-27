@@ -3,7 +3,43 @@ import altair as alt
 import pandas as pd
 import streamlit as st
 
+import snowflake.connector
 
+# Connect to the Snowflake database
+cnx = snowflake.connector.connect(
+    user='jisaacmelle001',
+    password='Yannah2.0',
+    account='GF81286'
+)
+cursor = cnx.cursor()
+
+# Define the SQL query to retrieve the roles and their privileges
+query = """
+SELECT
+    ROLE_NAME,
+    PRIVILEGE_NAME
+FROM
+    INFORMATION_SCHEMA.ROLE_PRIVILEGES
+"""
+
+# Execute the query and fetch the results
+cursor.execute(query)
+rows = cursor.fetchall()
+
+st.title("Snowflake Role Governance")
+
+# Create a table to display the results
+st.table(rows)
+
+# Close the cursor and connection
+cursor.close()
+cnx.close()
+
+
+
+
+
+# MULTISELECT SECTION
 
 number = st.sidebar.slider('Select a number:', 0, 10, 5)
 st.write('Selected number from slider widget is:', number)

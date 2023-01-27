@@ -9,7 +9,7 @@ import pandas as pd
 
 
 # Connect to the Snowflake database
-cnx = snowflake.connector.connect(**streamlit.secrets["snowflake3"])
+cnx = snowflake.connector.connect(**st.secrets["snowflake3"])
 cursor = cnx.cursor()
 
 # Define the SQL query to retrieve the roles and their privileges

@@ -8,11 +8,7 @@ import streamlit as st
 
 
 # Connect to the Snowflake database
-cnx = snowflake.connector.connect(
-    user='jisaacmelle001',
-    password='Yannah2.0',
-    account='GF81286'
-)
+cnx = snowflake.connector.connect(**streamlit.secrets["snowflake3"])
 cursor = cnx.cursor()
 
 # Define the SQL query to retrieve the roles and their privileges
